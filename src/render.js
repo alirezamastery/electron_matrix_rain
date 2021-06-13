@@ -142,7 +142,7 @@ async function main() {
 window.addEventListener('DOMContentLoaded', function () {
   loop = false
   document.onkeydown = () => ipcRenderer.send('close-me')
-  document.onmousemove = () => ipcRenderer.send('close-me')
+  // document.onmousemove = () => ipcRenderer.send('close-me')
   window.addEventListener('resize', function () {
     main()
   })
